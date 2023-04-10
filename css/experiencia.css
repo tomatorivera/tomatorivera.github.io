@@ -1,0 +1,137 @@
+/* Barlow Semi Condensed font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Playfair display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Paleta de colores */
+@import url('colores.css');
+
+/** Elementos por defecto **/
+@import url('header.css');
+@import url('nav.css');
+@import url('footer.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--anti-flash-white);
+    overflow-x: hidden;
+}
+
+/*** TABLA ***/
+main {
+    background-color: white;
+}
+
+.experiencia .experiencia-titulo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--rich-black);
+    font-weight: 800;
+}
+
+.experiencia .experiencia-titulo i {
+    color: var(--picton-blue);
+    font-size: 3rem;
+}
+
+table {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--anti-flash-white);
+}
+
+table th,
+table td {
+    text-align: center;
+    width: 25%;
+}
+
+table th {
+    font-size: 1.2rem;
+    padding: 7px 0;
+    font-weight: 500;
+    color: white;
+    background-color: var(--picton-blue);
+    border-left: 1px solid var(--anti-flash-white);
+}
+
+table td {
+    padding: 10px 0;
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+table tr strong {
+    font-weight: 600;
+}
+
+table tr button {
+    background-color: transparent;
+    color: var(--picton-blue);
+    cursor: pointer;
+    border-bottom: 1px solid var(--picton-blue);
+    transition: .2s all linear;
+}
+
+table tr button:hover,
+table tr button:focus {
+    color: var(--rich-black);
+    border-bottom: 1px solid var(--rich-black);
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.volver-cv {
+    font-size: .95rem;
+    line-height: 1em;
+    color: var(--picton-blue);
+    text-align: left;
+    transition: .2s all linear;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.volver-cv i {
+    font-weight: none;
+}
+.volver-cv:hover,
+.volver-cv:focus {
+    color: var(--rich-black);
+}
+
+
+@media (max-width: 760px) {
+    .experiencia .experiencia-titulo h2 {
+        font-size: 2rem;
+    }
+    .experiencia .experiencia-titulo i {
+        font-size: 2.1rem;
+    }
+
+    table th {
+        font-size: 1rem;
+    }
+    table td {
+        font-size: .95rem;
+    }
+}

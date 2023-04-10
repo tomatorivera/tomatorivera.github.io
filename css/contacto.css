@@ -1,0 +1,244 @@
+/* Barlow Semi Condensed font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Playfair display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Paleta de colores */
+@import url('colores.css');
+
+/** Elementos por defecto **/
+@import url('header.css');
+@import url('nav.css');
+@import url('footer.css');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--anti-flash-white);
+    overflow-x: hidden;
+}
+
+/*** HEADER ***/
+header .presentacion h1 {
+    margin-bottom: 50px;
+}
+
+/*** FORMULARIO CONTACTO ***/
+main {
+    background-color: white;
+}
+
+.contacto-contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* gap: 1.5rem; */
+    /* background-color: var(--rich-black); */
+    overflow: hidden;
+    padding: 20px;
+}
+
+.texto-contenedor h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+
+.texto-contenedor p {
+    padding-right: 25px;
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: var(--smooth-gray);
+}
+
+.texto-contenedor .botones a {
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: var(--picton-blue);
+    transition: .2s linear;
+}
+
+.texto-contenedor .botones a:hover, 
+.texto-contenedor .botones a:focus {
+    color: var(--rich-black);
+}
+
+.texto-contenedor h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.6em;
+}
+
+.texto-contenedor .volver-cv {
+    font-size: .95rem;
+    line-height: 1em;
+    color: var(--picton-blue);
+    text-align: left;
+    transition: .2s all linear;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.texto-contenedor .volver-cv i {
+    font-weight: none;
+}
+.texto-contenedor .volver-cv:hover,
+.texto-contenedor .volver-cv:focus {
+    color: var(--rich-black);
+}
+
+.contacto-formulario {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    display: block;
+    width: 100%;
+}
+
+.contacto-formulario label {
+    display: block;
+    font-weight: 700;
+    float: none;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: var(--smooth-gray);
+    font-size: 1.1rem;
+    line-height: 1.6em;
+    margin-bottom: .3rem;
+}
+.contacto-formulario label span {
+    color: red;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.6em;
+    color: var(--smooth-gray);
+    padding: .75em;
+    height: auto;
+    border: 3px solid var(--anti-flash-white);
+    background-color: #FAFAFA;
+    box-shadow: none;
+    transition: .3s all linear;
+}
+.contacto-formulario input:focus,
+.contacto-formulario input:active,
+.contacto-formulario textarea:focus,
+.contacto-formulario textarea:active {
+    background-color: white;
+    color: var(--rich-black);
+}
+.contacto-formulario textarea {
+    resize: none;
+}
+
+.contacto-formulario .btn-enviar input,
+.contacto-formulario .btn-enviar i {
+    font-size: .95rem;
+    line-height: 1em;
+    color: var(--picton-blue);
+    text-align: left;
+    transition: .2s all linear;
+}
+.contacto-formulario .btn-enviar input {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    width: auto;
+    letter-spacing: 2px;
+    padding: 0;
+    font-weight: 400;
+}
+
+.contacto-formulario .btn-enviar:hover input,
+.contacto-formulario .btn-enviar:hover i,
+.contacto-formulario .btn-enviar:focus input,
+.contacto-formulario .btn-enviar:focus i {
+    color: var(--rich-black);
+}
+
+.contacto-formulario fieldset #nombre-error,
+.contacto-formulario fieldset #mail-error,
+.contacto-formulario fieldset #mensaje-error {
+    font-size: 1rem;
+    font-weight: 400;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .texto-contenedor h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .texto-contenedor p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .texto-contenedor h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .texto-contenedor .botones {
+        justify-content: center;
+    }
+    .texto-contenedor .botones a {
+        font-size: 1.8rem;
+    }
+
+    .texto-contenedor {
+        margin-bottom: 3rem !important;
+    }
+
+    .texto-contenedor .otros-medios {
+        gap: 2rem;
+    }
+
+    .texto-contenedor .volver-cv {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) { 
+    .texto-contenedor {
+        padding: 0 !important;
+    }
+    .texto-contenedor p {
+        padding-right: 0;
+    }
+    .formulario-contenedor {
+        padding: 0 !important;
+    }
+    .contacto-contenedor {
+        padding: 5px;
+    }
+    .formulario-mapa {
+        padding: 0 !important;
+    }
+}

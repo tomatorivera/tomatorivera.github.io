@@ -1,0 +1,581 @@
+/* Barlow Semi Condensed font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Playfair display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Paleta de colores */
+@import url('colores.css');
+
+/** Elementos por defecto **/
+@import url('header.css');
+@import url('nav.css');
+@import url('footer.css');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--anti-flash-white);
+    overflow-x: hidden;
+}
+
+/**********
+ * Header *
+ *********/
+header .datos {
+    margin-top: 50px;   
+}
+
+header .datos .dato p {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+header .datos .dato i {
+    font-size: 25px;
+    color: var(--picton-blue);
+    width: 40px;
+}
+
+/**********
+ * PERFIL *
+ *********/
+#perfil .titulo {
+    font-size: 1.2rem;
+    color: var(--picton-blue);
+}
+
+#perfil .subtitulo {
+    font-size: 2.9rem;
+    font-weight: 800;
+    line-height: 1.1em;
+    font-family: 'Playfair Display', serif;
+    color: var(--rich-black);
+}
+
+#perfil .descripcion-personal .extra {
+    color: var(--picton-blue);
+    line-height: 1.1em;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+#perfil .descripcion-personal .sobre-mi {
+    font-weight: 400;
+    line-height: 1.6em;
+    font-size: 1.05rem;
+}
+
+#perfil .descripcion-personal .primera-parte {
+    color: var(--rich-black);
+}
+
+#perfil .descripcion-personal .segunda-parte {
+    color: var(--smooth-gray);
+}
+
+.botones {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.botones a {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--sky-blue);
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    transition: .3s all ease;
+}
+
+.botones a:hover,
+.botones a:focus {
+    color: var(--rich-black);
+}
+
+/*************
+ * FORMACIÓN *
+ *************/
+.seccion-informacion .titulo {
+    font-size: 2.9rem;
+    font-weight: 800;
+    line-height: 1.1em;
+    font-family: 'Playfair Display', serif;
+    color: var(--rich-black);
+}
+
+.seccion-informacion .subtitulo {
+    display: flex;
+}
+
+.seccion-informacion .subtitulo .texto {
+    display: flex;
+    align-items: center;
+    color: var(--smooth-gray);
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.6em;
+    width: 50%;
+}
+
+.icono-seccion {
+    color: var(--picton-blue);
+    font-size: 3.5rem;
+    text-align: right;
+    line-height: 1em;
+}
+
+.divisor-formacion .tipo-formacion {
+    color: var(--picton-blue);
+    line-height: 1.1em;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.elemento {
+    margin-bottom: 1.5rem;
+}
+
+.elemento .tiempo-empleado {
+    line-height: 1.25em;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.elemento .info-extra .flecha {
+    display: block;
+    text-align: right;
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.elemento .info-extra .flecha::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--smooth-gray);
+}
+
+.elemento .info-extra .flecha i {
+    position: relative;
+    z-index: 10;
+    width: 10%;
+}
+
+.elemento .info-extra a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--picton-blue);
+    font-size: .85rem;
+    text-decoration: none;
+    line-height: 1.6em;
+    letter-spacing: 2px;
+    transition: .3s all ease;
+}
+
+.elemento .info-extra a:hover,
+.elemento .info-extra a:focus {
+    color: var(--rich-black);
+}
+
+
+.elemento .info-principal h4 {
+    margin-top: 1.05rem;
+    color: var(--picton-blue);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.elemento .info-principal span {
+    color: var(--rich-black);
+    font-weight: 500;
+    line-height: 1.6em;
+    font-size: 1.05rem;
+}
+
+.elemento .info-principal p {
+    color: var(--smooth-gray);
+    font-weight: 400;
+    line-height: 1.6em;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.elemento .tecnologias p {
+    display: inline;
+    color: var(--rich-black);
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+.elemento .tecnologias .tecnologia {
+    display: inline-block;
+    background-color: var(--picton-blue);
+    padding: .3em .5em;
+    color: var(--anti-flash-white);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+/*******************
+ * IMAGEN DIVISORA *
+ ******************/
+.imagen-parallax {
+    position: relative;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    overflow: hidden;
+}
+
+.imagen-parallax .filtro {
+    position: absolute;
+    background-color: transparent;
+    opacity: 1;
+    background-image: linear-gradient(135deg,#F4F6F9 5%,#F2F5F900 70%);
+    height: 100%;
+    width: 100%;
+}
+
+.imagen-parallax .img {
+    position: relative;
+    padding-bottom: 50%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/***************
+ * EXPERIENCIA *
+ **************/
+#experiencia {
+    margin-top: 6rem;
+}
+
+.contenido {
+    margin: 5rem 0;
+}
+
+#experiencia .titulo {
+    font-size: 2.9rem;
+    font-weight: 800;
+    line-height: 1.1em;
+    font-family: 'Playfair Display', serif;
+    color: var(--rich-black);
+    margin: 0;
+}
+
+#experiencia .tecnologias-usadas {
+    padding-right: 80px;
+}
+
+#experiencia .tecnologias-usadas .tecnologia {
+    margin: 1rem 0;
+}
+
+#experiencia .tecnologias-usadas .tecnologia .progress {
+    background-color: white;
+    height: 24px;
+}
+
+#experiencia .tecnologias-usadas .tecnologia .progress-bar {
+    background-color: var(--picton-blue);
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    font-size: .8rem;
+}
+
+#experiencia .tecnologias-usadas .tecnologia p {
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    color: var(--smooth-gray);
+    font-size: 1.1rem;
+    line-height: 1.6em;
+}
+
+/*************
+ * PORTFOLIO *
+ ************/
+#portfolio .titulo {
+    font-size: 2.9rem;
+    font-weight: 800;
+    line-height: 1.1em;
+    font-family: 'Playfair Display', serif;
+    color: var(--rich-black);
+}
+
+#portfolio .elementos-portfolio {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#portfolio .elementos-portfolio .thumbnail {
+    border-radius: 10px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+#portfolio .elementos-portfolio .thumbnail img,
+#portfolio .elementos-portfolio .thumbnail h3 {
+    display: none;
+    width: 1px;
+    height: 1px;
+}
+
+#portfolio .elementos-portfolio .active {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .75);
+    z-index: 50;
+    background-image: none !important;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+#portfolio .elementos-portfolio .active img,
+#portfolio .elementos-portfolio .active h3 {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+#portfolio .elementos-portfolio .active img {
+    width: 60%;
+    max-height: 80%;
+}
+#portfolio .elementos-portfolio .active h3 {
+    padding: 2em 5em;
+    color: var(--anti-flash-white);
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+/***************************/
+
+@media (max-width: 1140px) {
+    #portfolio .elementos-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .elemento {
+        margin-bottom: 2.5rem;
+    }
+
+    .elemento .info-extra {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 2px solid #eaeaea;
+        padding-bottom: 5px;
+    }
+
+    .elemento .info-principal {
+        width: 100%;
+    }
+
+    .elemento .info-principal p {
+        margin-bottom: 1rem;
+    }
+
+    .elemento .info-extra .flecha {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .elemento .info-extra .flecha i {
+        rotate: 90deg;
+        width: auto;
+    }
+    .elemento .info-extra .flecha::before {
+        display: none;
+    }
+
+    .elemento .info-principal h4 {
+        margin-top: 12px;
+    }
+
+    #experiencia .tecnologias-usadas {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    #portfolio .elementos-portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    #perfil .titulo {
+        font-size: 1.1rem;
+    }
+
+    #perfil .subtitulo {
+        font-size: 2.1rem;
+    }
+
+    #perfil .descripcion-personal .extra {
+        font-size: 1.4rem;
+    }
+
+    #perfil .descripcion-personal .sobre-mi {
+        font-size: 1rem;
+        line-height: 1.4em;
+    }
+
+    #perfil .descripcion-personal .botones{
+        gap: 12px;
+    }
+    #perfil .descripcion-personal .botones a {
+        font-size: .9rem;
+    }
+
+    #formacion .titulo {
+        font-size: 2.1rem;
+    }
+
+    #formacion .subtitulo .texto {
+        width: 80%;
+        font-size: 1rem;
+    }
+    #formacion .subtitulo .icono-seccion {
+        width: 20%;
+    }
+
+    .icono-seccion {
+        font-size: 3rem;
+    }
+
+    #formacion .tipo-formacion {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #experiencia .titulo {
+        font-size: 2.1rem;
+    }
+
+    #experiencia .experiencia {
+        margin-top: 3rem;
+    }
+
+    .elemento .info-principal h4 {
+        font-size: 1.4rem;
+    }
+    .elemento .info-principal span {
+        font-size: 1rem;
+    }
+    .elemento .info-principal p {
+        line-height: 1.4em;
+        font-size: 1rem;
+    }
+
+    .imagen-parallax .img {
+        background-position: center;
+        background-attachment: initial;
+        height: 600px;
+    }
+
+    .contenido {
+        margin: 3rem 0;
+    }
+
+    #portfolio .titulo {
+        font-size: 2.1rem;
+    }
+
+    #portfolio .active img {
+        width: 90% !important;
+    }
+    #portfolio .active h3 {
+        font-size: 1.2rem !important;
+        line-height: 1.4em !important;
+        padding: 2em 1em !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header .datos {
+        gap: 10px !important;
+        align-items: center !important;
+    }
+    header .datos .dato p {
+        font-size: 17px;
+    }
+    header .datos .dato i {
+        font-size: 20px;
+    }
+
+    #portfolio .active img {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    #perfil .descripcion-personal {
+        margin: 3rem 0 !important;
+    }
+
+    #perfil .descripcion-personal .col-sm-6 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #perfil .descripcion-personal .extra {
+        margin-bottom: 1rem;
+    }
+
+    #perfil .descripcion-personal .botones {
+        gap: 15px;
+    }
+}

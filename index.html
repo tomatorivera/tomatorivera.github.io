@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomas Rivera">
+    <meta name="description" content="Trabajo práctico final para Argentina Programa 4.0 de Tomas Rivera">
+
+    <title>C.V. - Tomas Rivera</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+        crossorigin="anonymous">
+
+    <!-- Index CSS -->
+    <link 
+        rel="stylesheet" 
+        href="css/index.css">
+
+    <!-- Font Awesome -->
+    <script 
+        src="https://kit.fontawesome.com/58fb316fe6.js" 
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg position-absolute w-100" aria-label="Navbar">
+        <a href="#perfil" class="saltar-contenido">Saltar al contenido</a>
+        <div class="container py-2">
+            <a href="#" class="navbar-brand">
+                Tomas Rivera
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-lg-flex justify-content-end gap-lg-1">
+                    <li class="nav-item">
+                        <a href="#perfil" class="nav-link">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#formacion" class="nav-link">Formación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experiencia" class="nav-link">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html/contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="esfera"></div>
+
+        <section class="container h-100">
+            <section class="position-relative w-100 h-100 d-flex flex-column justify-content-center presentacion">
+                <article class="pretitulo">
+                    <h3>
+                        Hola, mi nombre es
+                        <div class="borde-inferior"></div>
+                    </h3>
+                </article>
+
+                <h1>Tomas Rivera</h1>
+                <h2>Junior Developer</h2>
+
+                <article class="datos d-flex flex-column justify-content-center align-items-start gap-3">
+                    <div class="dato d-flex align-items-center">
+                        <i class="fa-solid fa-location-dot" area-hidden="true"></i>
+                        <p class="m-0">Tucumán, Argentina</p>
+                    </div>
+                    <div class="dato d-flex align-items-center">
+                        <i class="fa-solid fa-envelope" area-hidden="true"></i>
+                        <p class="m-0">tomasriveraocttaviano@gmail.com</p>
+                    </div>
+                    <div class="dato d-flex align-items-center">
+                        <i class="fa-solid fa-phone" area-hidden="true"></i>
+                        <p class="m-0">+54 9 381 597-6813</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </header>
+
+    <main class="container">
+        <section id="perfil" class="py-5">
+            <h3 class="titulo py-3">Sobre mi</h3>
+
+            <p class="subtitulo">
+                Soy un desarrollador junior Freelancer entusiasta con sede en Argentina, con años de estudio formal y autodidacta y muchas ganas de seguir progresando.
+            </p>
+
+            <div class="descripcion-personal row py-5 my-5">
+                <div class="col-sm-6">
+                    <h3 class="extra">¡Me encanta desarrollar soluciones informáticas!</h3>
+                </div>
+                <div class="col-sm-6">
+                    <p class="sobre-mi primera-parte">
+                        Durante el año 2019 encontré mi vocación: el desarrollo. A partir de allí me entusiasmé por aprender y he incursionado por distintas ramas que me han interesado: el desarrollo web, desarrollo Android y desarrollo en escritorio. A partir de 2021 y con mucho esfuerzo obtuve mis primeras experiencias laborales detalladas más adelante.
+                    </p>
+                    <p class="sobre-mi segunda-parte">
+                        Mi enfoque está claro: aportar todo lo que pueda al equipo y/o empresa con la que trabaje, proponer buenas ideas y soluciones de calidad. En mi paso por equipos de trabajo siempre disfruto compartir mis conocimientos y por supuesto aprender todo lo que se pueda de mis compañeros. Soy una persona que se toma muy en serio su trabajo. Me considero una persona muy detallista y aplico esto en los proyectos en los que formo parte. Siempre desarrollo pensando en el usuario final, que aquella persona que utilice mis software's pueda gozar al 100% de las facilidades tecnológicas que nos acompañan al día de hoy, brindandole un producto digital intuitivo, eficiente y práctico.
+                    </p>
+                    <div class="botones py-3">
+                        <a href="#formacion">Formación</a>
+                        <a href="#experiencia">Experiencia</a>
+                        <a href="#portfolio">Portafolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion" class="seccion-informacion py-5">
+            <h3 class="titulo py-3 m-0">Mi formación</h3>
+
+            <div class="row subtitulo pb-5 pt-3">
+                <div class="col-6 texto">
+                    He aquí toda la educación que he recibido para adquirir mis conocimientos, tanto educación formal como cursos y capacitaciones.
+                </div>
+                <div class="col-6 icono-seccion">
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="divisor-formacion row py-3">
+                <div class="col-md-4">
+                    <h3 class="tipo-formacion">Educación formal</h3>
+                </div>
+                <div class="col-md-8">
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">Actual</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Universidad Nacional de Tucumán</h4>
+                                <span>Programador Universitario</span>
+                                <p>
+                                    Dentro de una carrera dirigida estrictamente a la programación, tuve la oportunidad de incursionar dentro de distintos tipos de desarrollo y trabajar en equipo. Aún me encuentro cursando, adquiriendo más habilidades y nuevas experiencias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">2016 - 2022</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Escuela Técnica N1 - Independencia Argentina</h4>
+                                <span>Técnico en informática personal y profesional</span>
+                                <p>
+                                    Exploré diversas ramas de la informática como: simulación, diseño web, programación, seguridad informática, redes y dispositivos de hardware. Adquirí mis primeras experiencias realizando proyectos diversos para la misma institución, al ser una escuela Técnica, se deben cumplir 200hrs. reloj de trabajos de práctica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divisor-formacion row py-3">
+                <div class="col-md-4">
+                    <h3 class="tipo-formacion">Cursos</h3>
+                </div>
+                <div class="col-md-8">
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">08/22 - 09/22</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                                <a href="https://drive.google.com/file/d/1Dq9-9rjQwTp6xw8vixTzwQWl88q3pflN/view?usp=sharing" class="certificado" target="_blank">Certificado</a>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Junior Achievement</h4>
+                                <span>Yo Puedo Programar</span>
+                                <p>
+                                    Durante el curso aprendí a diseñar una página web y potenciar habilidades como mi pensamiento crítico, autonomía digital, pensamiento computacional, creatividad y comunicación.
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Aprendí sobre:</p>
+                                    <span class="tecnologia rounded-pill">Soft Skills</span>
+                                    <span class="tecnologia rounded-pill">HTML</span>
+                                    <span class="tecnologia rounded-pill">CSS</span>
+                                    <span class="tecnologia rounded-pill">JavaScript</span>
+                                    <span class="tecnologia rounded-pill">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">08/22 - 09/22</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                                <a href="https://drive.google.com/file/d/1WzZ-9hnZjFWbfDyaRLH5t_bJrbKLNt7u/view?usp=sharing" class="certificado" target="_blank">Certificado</a>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Junior Achievement</h4>
+                                <span>Planificá tu futuro</span>
+                                <p>
+                                    En el trayecto de 'Planificá tu futuro' pude trabajar nociones básicas de autoconocimiento, planificación, intereses, aptitudes y mercado laboral. Adquirí herramientas de autoconocimiento logrando descubrir y potenciar mis intereses y aptitudes.
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Aprendí sobre:</p>
+                                    <span class="tecnologia rounded-pill">FODA</span>
+                                    <span class="tecnologia rounded-pill">Ikigai</span>
+                                    <span class="tecnologia rounded-pill">Habilidades STEM</span>
+                                    <span class="tecnologia rounded-pill">Diseño de CV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">03/22</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>SoyDalto</h4>
+                                <span>Curso de CSS</span>
+                                <p>
+                                    En este curso me adentré a fondo y pude aprender la mayoría de las propiedades en CSS3, maquetación con flex, maquetación con grid, cómo funcionan los elementos de HTML (position's y display's), transiciones, sombras, étc.
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Aprendí sobre:</p>
+                                    <span class="tecnologia rounded-pill">CSS3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">03/22</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>SoyDalto</h4>
+                                <span>Curso de HTML5</span>
+                                <p>
+                                    En este curso básico y completo de 2 horas y media de HTML5 aprendí a fondo sobre cómo usar HTML, como maquetar una web, semántica en HTML y reglas de accesibilidad básicas para poder comenzar a crear la estructura de mis páginas web.
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Aprendí sobre:</p>
+                                    <span class="tecnologia rounded-pill">HTML</span>
+                                    <span class="tecnologia rounded-pill">Semántica</span>
+                                    <span class="tecnologia rounded-pill">Maquetación web</span>
+                                    <span class="tecnologia rounded-pill">Accesibilidad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">12/21 - 02/22</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                                <a href="https://www.udemy.com/certificate/UC-4ad87e59-2827-419b-8821-f4d8fd3c50cb/" class="certificado" target="_blank">Certificado</a>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Udemy</h4>
+                                <span>Programación en Java</span>
+                                <p>
+                                    En este curso aprendí mucho sobre un lenguaje de programación complejo como lo es Java. Sobre este lenguaje realicé mis primeros desarrollos aprendiendo conceptos básicos de programación (lógica, variables, condicionales, bucles, etc...), paradigmas como la Programación Orientada a Objetos, Programación Orientada a Eventos, programé sistemas de escritorio de mediana complejidad con Swing y experimenté por primera vez el lenguaje SQL con MySQL Workbench (consultas, tablas, relaciones, triggers, entre otros).
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Aprendí sobre:</p>
+                                    <span class="tecnologia rounded-pill">Java</span>
+                                    <span class="tecnologia rounded-pill">POO</span>
+                                    <span class="tecnologia rounded-pill">POE</span>
+                                    <span class="tecnologia rounded-pill">Java Swing</span>
+                                    <span class="tecnologia rounded-pill">API's</span>
+                                    <span class="tecnologia rounded-pill">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="imagen-parallax">
+            <div class="img" style="background-image: url('img/imagen-personal-fondo.jpg');">
+                <div class="filtro"></div>
+            </div>
+        </div>
+
+        <section id="experiencia" class="row py-5">
+            <article class="col-md-4 tecnologias-usadas">
+                <h3 class="titulo">Tecnologías</h3>
+                <ul class="list-unstyled contenido">
+                    <li class="tecnologia">
+                        <p>Java</p>
+                        <div class="progress rounded-pill">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;"
+                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </li>
+                    <li class="tecnologia">
+                        <p>HTML5</p>
+                        <div class="progress rounded-pill">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </li>
+                    <li class="tecnologia">
+                        <p>CSS3</p>
+                        <div class="progress rounded-pill">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </li>
+                    <li class="tecnologia">
+                        <p>Javascript</p>
+                        <div class="progress rounded-pill">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </li>
+                    <li class="tecnologia">
+                        <p>SQL</p>
+                        <div class="progress rounded-pill">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </li>
+                    <li class="tecnologia">
+                        <p>PHP</p>
+                        <div class="progress rounded-pill">
+                            <div class="progress-bar" role="progressbar" style="width: 40%;"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </li>
+                    <li class="tecnologia">
+                        <p>Adobe Photoshop</p>
+                        <div class="progress rounded-pill">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article class="col-md-8 experiencia">
+                <div class="row">
+                    <div class="col-10">
+                        <h3 class="titulo">Experiencia laboral</h3>
+                    </div>
+                    <div class="col-2 icono-seccion">
+                        <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="empleos contenido">
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">Actual</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                                <a href="https://www.freelancer.es/u/tomatorivera" target="_blank">Perfil</a>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Desarrollador Freelancer</h4>
+                                <span>Freelancer.es</span>
+                                <p>
+                                    Ofrecí servicios variados, principalmente desarrollé software de escritorio con Java Swing y JavaFX, desarrollo móvil en Android y desarrollo frontend. Al trabajar Freelancer uno debe encarar los proyectos de principio a fin, en todos estos me encargué de realizar el planteamiento, diseño, desarrollo, plagiarism, testing y documentación. Tuve que poner en práctica habilidades de Marketing digital y realizar negociación directa con mis clientes.
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Tecnologías usadas:</p>
+                                    <span class="tecnologia rounded-pill">Java</span>
+                                    <span class="tecnologia rounded-pill">JavaFX</span>
+                                    <span class="tecnologia rounded-pill">Java Swing</span>
+                                    <span class="tecnologia rounded-pill">MySQL</span>
+                                    <span class="tecnologia rounded-pill">HTML</span>
+                                    <span class="tecnologia rounded-pill">CSS</span>
+                                    <span class="tecnologia rounded-pill">JavaScript</span>
+                                    <span class="tecnologia rounded-pill">PHP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">05/22 - 11/22</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Pasantía en Desarrollador de sistemas</h4>
+                                <span>Escuela Técnica N1 - Independencia Argentina</span>
+                                <p>
+                                    Mi trabajo como pasante en esta institución fue detectar puntos en donde los procesos escolares podrían eficientizarse mediante sistemas digitales (la mayor parte de los trámites se hacían en papel), y por supuesto, desarrollar los mismos. Fuí libre de elegir las tecnologías que creyese convienientes o supiese utilizar.
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Tecnologías usadas:</p>
+                                    <span class="tecnologia rounded-pill">Java</span>
+                                    <span class="tecnologia rounded-pill">Java Swing</span>
+                                    <span class="tecnologia rounded-pill">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="row">
+                            <div class="col-2 info-extra">
+                                <p class="tiempo-empleado">06/19 - 01/22</p>
+                                <span class="flecha">
+                                    <i class="fa-solid fa-circle-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-10 info-principal">
+                                <h4>Diseñador gráfico</h4>
+                                <span>Independiente</span>
+                                <p>
+                                    Servicio de diseño gráfico en general: diseño de logotipos, tarjetas personales y publicitarias, flyers, folletos, invitaciones, diseño de CV, diseños para cartelería, entre otros. Trabajé junto a micro-emprendimientos realizando trabajos de diseño de marca, marketing y branding. 
+                                </p>
+                                <div class="tecnologias">
+                                    <p>Tecnologías usadas:</p>
+                                    <span class="tecnologia rounded-pill">Adobe Photoshop</span>
+                                    <span class="tecnologia rounded-pill">Adobe Illustrator</span>
+                                    <span class="tecnologia rounded-pill">Corel Draw</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botones d-flex justify-content-center">
+                    <a href="html/experiencia-laboral.html" class="mb-5">
+                        Ver más
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section id="portfolio" class="py-5 my-5">
+            <section class="row">
+                <div class="col-6">
+                    <h3 class="titulo">Portfolio</h3>
+                </div>
+                <div class="col-6 icono-seccion">
+                    <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                </div>
+            </section>
+            <section class="elementos-portfolio contenido">
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-1.png');">
+                    <h3>Elecciones estudiantiles virtuales de Escuela Técnica N1 - Ind. Arg.</h3>
+                    <img src="img/portfolio-images/portfolio-img-1.png" alt="Previsualización del proyecto 'Web para las elecciones estudiantiles virtuales'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-2.png');">
+                    <h3>Olimpiadas Contables 2022 de Tucumán</h3>
+                    <img src="img/portfolio-images/portfolio-img-2.png" alt="Previsualización del proyecto 'Web para las Olimpiadas Contables'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-3.png');">
+                    <h3>Web Post-venta, Caseríssima</h3>
+                    <img src="img/portfolio-images/portfolio-img-3.png" alt="Previsualización del proyecto 'Web post-venta para Caseríssima'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-4.png');">
+                    <h3>Sistema de elecciones estudiantiles</h3>
+                    <img src="img/portfolio-images/portfolio-img-4.png" alt="Previsualización del proyecto 'Sistema de elecciones estudiantiles'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-5.png');">
+                    <h3>Sistema de Bienes Raíces</h3>
+                    <img src="img/portfolio-images/portfolio-img-5.png" alt="Previsualización del proyecto 'Sistema de Bienes Raíces'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-6.png');">
+                    <h3>Sistema de gestión de Hotelería</h3>
+                    <img src="img/portfolio-images/portfolio-img-6.png" alt="Previsualización del proyecto 'Sistema de gestión de Hotelería'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-7.png');">
+                    <h3>Sistema simple de control de stock</h3>
+                    <img src="img/portfolio-images/portfolio-img-7.png" alt="Previsualización del proyecto 'Sistema simple de control de stock'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-8.png');">
+                    <h3>Sistema de gráfica de matrices y detección de pares</h3>
+                    <img src="img/portfolio-images/portfolio-img-8.png" alt="Previsualización del proyecto 'Sistema de gráfica de matrices y detección de pares'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-9.png');">
+                    <h3>Sistema de gestión de ventas de paquetes de Internet</h3>
+                    <img src="img/portfolio-images/portfolio-img-9.png" alt="Previsualización del proyecto 'Sistema de gestión de ventas de paquetes de Internet'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-10.png');">
+                    <h3>Videojuego Gomoku</h3>
+                    <img src="img/portfolio-images/portfolio-img-10.png" alt="Previsualización del proyecto 'Videojuego Gomoku'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-11.png');">
+                    <h3>Digitalizadora de texto</h3>
+                    <img src="img/portfolio-images/portfolio-img-11.png" alt="Previsualización del proyecto 'Digitalizadora de texto'">
+                </article>
+                <article class="thumbnail" style="background-image: url('img/portfolio-images/portfolio-img-12.png');">
+                    <h3>Web de recetas</h3>
+                    <img src="img/portfolio-images/portfolio-img-12.png" alt="Previsualización del proyecto 'Web de recetas'">
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer id="contacto" class="pt-5">
+        <section class="container">
+            <section class="row">
+                <article class="col-md-8 d-flex flex-column justify-content-center align-items-md-start align-items-center py-5">
+                    <span class="brand mb-3">
+                        ¿Te interesa mi trabajo? 
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                    <a href="html/contacto.html" class="contacto">Contáctame</a>
+                </article>
+                <article class="col-md-4 d-flex justify-content-md-end justify-content-center align-items-center gap-5 py-5">
+                    <ul class="links-footer list-unstyled h-100">
+                        <span class="mb-3">Social</span>
+                        <li><a href="https://www.linkedin.com/in/rtomas-rivera/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/tomatorivera/" target="_blank">Github</a></li>
+                        <li><a href="https://wa.link/jaya0e" target="_blank">Whatsapp</a></li>
+                    </ul>
+                    <ul class="links-footer list-unstyled h-100">
+                        <span class="mb-3">Página</span>
+                        <li><a href="#perfil" target="_blank">Perfil</a></li>
+                        <li><a href="#formacion" target="_blank">Formación</a></li>
+                        <li><a href="#experiencia" target="_blank">Experiencia</a></li>
+                        <li><a href="#portfolio" target="_blank">Portfolio</a></li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+        <section class="copyright w-100 border-top d-flex justify-content-center align-items-center mt-5 py-4">
+            <p class="m-0 px-1 text-center">&copy; Ramiro Tomas Rivera Octtaviano | Proyecto para Argentina Programa 4.0</p>
+        </section>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Index JS -->
+    <script src="js/index.js"></script>
+</body>
+</html>

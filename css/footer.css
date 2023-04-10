@@ -1,0 +1,90 @@
+/*** ESTILOS POR DEFECTO DEL ELEMENTO FOOTER ***/
+
+footer {
+    background-color: white;
+}
+
+footer .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5em;
+}
+
+footer .contacto {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--rich-black);
+    text-decoration: none;
+    border-bottom: 2px solid var(--rich-black);
+    transition: .3s all ease;
+}
+
+footer .contacto:hover {
+    color: var(--picton-blue);
+    border-bottom: 2px solid var(--picton-blue);
+}
+
+.links-footer {
+    text-align: center;
+}
+
+.links-footer span {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.links-footer li a {
+    color: var(--smooth-gray);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    text-decoration: none;
+    transition: .2s all linear;
+}
+
+.links-footer li a:hover {
+    color: var(--sky-blue);
+}
+
+.copyright p {
+    color: var(--smooth-gray);
+    line-height: 1.6em;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 992px) {
+    footer .contacto {
+        font-size: 3.3rem;
+    }
+    footer .brand,
+    footer .links-footer span {
+        font-size: 1.2rem;
+    }
+
+    footer .links-footer li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .contacto {
+        font-size: 2.6rem;
+    }
+    footer .brand,
+    footer .links-footer span {
+        font-size: 1.1rem;
+    }
+
+    footer .links-footer li a {
+        font-size: 1rem;
+    }
+
+    footer .copyright p {
+        font-size: 1rem;
+    }
+}

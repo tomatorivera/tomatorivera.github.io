@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomas Rivera">
+    <meta name="description" content="Trabajo práctico final para Argentina Programa 4.0 de Tomas Rivera">
+
+    <title>Contacto - Tomas Rivera</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+        crossorigin="anonymous">
+
+    <!-- Contacto CSS -->
+    <link 
+        rel="stylesheet"
+        href="../css/contacto.css">
+
+        <!-- Font Awesome -->
+    <script 
+        src="https://kit.fontawesome.com/58fb316fe6.js" 
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg position-absolute w-100" aria-label="Navbar">
+        <a href="#perfil" class="saltar-contenido">Saltar al contenido</a>
+        <div class="container py-2">
+            <a href="#" class="navbar-brand">
+                Tomas Rivera
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 w-100 d-lg-flex justify-content-end gap-lg-1">
+                    <li class="nav-item">
+                        <a href="../index.html#perfil" class="nav-link">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#formacion" class="nav-link">Formación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#experiencia" class="nav-link">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#portfolio" class="nav-link">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#form-contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="esfera"></div>
+
+        <section class="container h-100">
+            <section class="position-relative w-100 h-100 d-flex flex-column justify-content-center presentacion">
+                <article class="pretitulo">
+                    <h3>
+                        <div class="borde-inferior"></div>
+                    </h3>
+                </article>
+
+                <h1>Contacto</h1>
+            </section>
+        </section>
+    </header>
+
+    <main class="position-relative py-5">
+        <section id="form-contacto" class="position-relative container h-100 w-100 my-5 p-3 d-flex justify-content-center align-items-center">
+            <div class="contacto-contenedor row">
+                <div class="texto-contenedor d-flex flex-column position-relative col-md-6">
+                    <article class="mb-5">
+                        <h2 class="mb-3">Contáctame</h2>
+                        <p class="mb-0">
+                            Puedes usar este medio para enviarme un mensaje directo a mi gmail, o bien usar los links de abajo para utilizar otros medios como Whatsapp o Linkedin.
+                        </p>
+                    </article>
+                    <article class="otros-medios h-100 position-relative d-flex flex-column justify-content-between">
+                        <article class="medios">
+                            <h3>Otros medios</h3>
+                            <div class="botones d-flex gap-2">
+                                <a href="https://www.linkedin.com/in/rtomas-rivera/" target="_blank">
+                                    <i class="fa-brands fa-linkedin" title="Link hacia mi LinkedIn"></i>
+                                </a>
+                                <a href="https://wa.link/jaya0e" target="_blank">
+                                    <i class="fa-brands fa-square-whatsapp" title="Link hacia mi Whatsapp"></i>
+                                </a>
+                                <a href="mailto:tomasriveraocttaviano@gmail.com" target="_blank">
+                                    <i class="fa-solid fa-square-envelope" title="Link hacia mi Gmail"></i>
+                                </a>
+                                <a href="tel:+5493815976813">
+                                    <i class="fa-solid fa-square-phone" title="Link para llamar a mi número"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <a href="../index.html" class="volver-cv d-block">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                            Volver al currículum
+                        </a>
+                    </article>
+                </div>
+                <div class="formulario-contenedor col-md-6">
+                    <form action="" method="post" class="contacto-formulario" name="formularioContacto">
+                        <fieldset>
+                            <label for="nombre">
+                                Nombre completo
+                                <span>*</span>
+                            </label>
+                            <input type="text" placeholder="John Doe" name="nombre" id="nombre" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="mail">
+                                Correo electrónico
+                                <span>*</span>
+                            </label>
+                            <input type="email" placeholder="johndoe@gmail.com" name="mail" id="mail" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="mensaje">
+                                Mensaje
+                                <span>*</span>
+                            </label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Escribe un mensaje..." required></textarea>
+                        </fieldset>
+
+                        <fieldset class="btn-enviar d-flex align-items-center justify-content-start gap-2 mt-2">
+                            <input type="submit" value="Enviar" id="enviar">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="formulario-mapa mt-5 w-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.30717314278!2d-65.2926334213737!3d-26.832688474490393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1681058503533!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="pt-5">
+        <section class="container">
+            <section class="row">
+                <article class="col-md-8 d-flex flex-column justify-content-center align-items-md-start align-items-center py-5">
+                    <span class="brand mb-3">
+                        ¿Te interesa mi trabajo? 
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                    <a href="#form-contacto" class="contacto">Contáctame</a>
+                </article>
+                <article class="col-md-4 d-flex justify-content-md-end justify-content-center align-items-center gap-5 py-5">
+                    <ul class="links-footer list-unstyled h-100">
+                        <span class="mb-3">Social</span>
+                        <li><a href="https://www.linkedin.com/in/rtomas-rivera/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/tomatorivera/" target="_blank">Github</a></li>
+                        <li><a href="https://wa.link/jaya0e" target="_blank">Whatsapp</a></li>
+                    </ul>
+                    <ul class="links-footer list-unstyled h-100">
+                        <span class="mb-3">Página</span>
+                        <li><a href="../index.html#perfil" target="_blank">Perfil</a></li>
+                        <li><a href="../index.html#formacion" target="_blank">Formación</a></li>
+                        <li><a href="../index.html#experiencia" target="_blank">Experiencia</a></li>
+                        <li><a href="../index.html#portfolio" target="_blank">Portfolio</a></li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+        <section class="copyright w-100 border-top d-flex justify-content-center align-items-center mt-5 py-4">
+            <p class="m-0 px-1 text-center">&copy; Ramiro Tomas Rivera Octtaviano | Proyecto para Argentina Programa 4.0</p>
+        </section>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JQuery validate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- SimplyCountdown -->
+    <script src="../lib/simplyCountdown.js"></script>
+
+    <!-- Contacto JS -->
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

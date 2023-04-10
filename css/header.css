@@ -1,0 +1,105 @@
+/* Barlow Semi Condensed font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Playfair display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Paleta de colores */
+@import url('colores.css');
+
+
+/** ESTILOS POR DEFECTO DEL ELEMENTO HEADER **/
+
+header {
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+header .esfera {
+    /* position: absolute;
+    width: 95rem;
+    height: 150vh;
+    background-color: var(--anti-flash-white);
+    background: radial-gradient(#F6F8FA, #C1CFE0);
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    top: -65%;
+    right: -32%; */
+    position: absolute;
+    width: 100vw;
+    height: 90%;
+    background-image: url(https://websitedemos.net/portfolio-02/wp-content/uploads/sites/864/2021/05/bg-02-free-img.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .3;
+}
+
+header .pretitulo h3 {
+    color: var(--smooth-gray);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.25em;
+    text-transform: uppercase;
+}
+
+header .pretitulo .borde-inferior {
+    background-color: var(--smooth-gray);
+    height: 2px;
+    width: 5%;
+    margin: 10px 0;
+}
+
+header .presentacion h1 {
+    font-size: 83px;
+    line-height: 1.1em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    color: var(--rich-black);
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+header .presentacion h2 {
+    color: var(--smooth-gray);
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+}   
+
+@media (max-width: 1140px) {
+    header .esfera {
+        width: 60vw;
+        height: 70vh;
+        margin: 0 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .pretitulo h3 {
+        font-size: 1rem;
+        line-height: 1.25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .presentacion h1 {
+        line-height: 1.1em;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    header .presentacion h2 {
+        line-height: 1.2em;
+        font-size: 30px;
+        text-align: center;
+    }
+}
